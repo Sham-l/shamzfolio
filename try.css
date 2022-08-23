@@ -1,0 +1,184 @@
+
+.section-about-me{
+    display: flex;
+    min-height: 600px;
+    font-weight: 500;
+    /* flex-direction: row; */
+    /* padding: 0 6px 0 90px; */
+    /* font-size: 4.2rem; */
+    line-height: 64px;
+    color:#F1F1F1;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    /* justify-content: space-evenly; */
+    box-sizing: border-box;
+    flex-wrap:wrap ;
+    /* padding-top: 134px; */
+}
+.about-me-image-container{
+max-width: 50%;
+/* flex-grow: 1; */
+height: 700px;
+contain: content;
+background-image:radial-gradient(#F4BFBF,#cd9296);
+}
+.about-me-image{
+   height: 700px;
+   /* width: 100%; */
+}
+.about-me-text-container{
+    width: 50%;
+    /* flex-grow: 1; */
+height:700px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-image:radial-gradient(circle,#F4BFBF,#cd9296);
+    background-color: #F2DF3A;
+     font-size: 2.8rem;
+     padding: 130px 70px 0 70px ;
+     line-height: 55px;
+   
+}
+.big2{
+    font-weight: 900;
+    font-size: 5rem;
+    color: #67cbd8;
+    filter: drop-shadow(2px 2px 4px #00000060);
+    display: inline-block;
+}
+.big2:hover{
+    font-weight: 900;
+    font-size: 6rem;
+    filter: drop-shadow(2px 2px 3px #00000060);
+    animation: shake 1.3s linear alternate;
+    display: inline-block;
+    cursor: grab;
+    
+}
+.about-text{
+    font-size:2.5rem ;
+    padding-top: 2rem;
+    
+}
+.about-me-span-text{
+    color: #dae2e2;
+    filter: drop-shadow(3px 3px 2px #00000060);
+}
+.hire-me-container{
+    width: 100%;
+   min-height:500px;
+    font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* justify-content: center; */
+        /* align-items: center; */
+        background:#67cbd8;
+        /* background-color: #F2DF3A; */
+         font-size: 1.7rem;
+         line-height: 55px;
+       
+       
+}
+.hire-me-text{
+    text-shadow:1px 1px 1px #00000060;
+    position: relative;
+    /* display: inline-block; */
+}
+.big3{
+    color: #F2DF3A;
+    font-size: 4.1rem;
+
+}
+.hire-me-text::before,.hire-me-text::after{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: " ";
+
+}
+.hire-me-text::before{
+    background-color: #67cbd8;
+    animation: typewriter 8s steps(35) forwards 10s;
+   animation-iteration-count: 2;
+    
+}
+.hire-me-text::after{
+    width:5px;
+    animation: typewriter 8s steps(35) forwards 10s ,
+    blink 750ms infinite;
+    background-color: #F2DF3A;
+    
+}
+@keyframes typewriter {
+    to{
+        left:100%;
+    }
+}
+@keyframes blink {
+    100%{
+        background-color: transparent;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hire-me-button{
+    margin-top: 50px;
+    height: 50px;
+    width: 10rem;
+    border: none;
+    font-weight: 500;
+    border-radius: 2rem;
+    /* border-color: #3FA796; */
+    background-color: #f2e03a;
+    color: #ffffff;
+    /* text-shadow: 1px 0px 1px black; */
+   /* box-shadow: 0px 0px 15px  black; */
+   font-size: 2.1rem;
+   filter: drop-shadow(1px 1px 4px #00000060);
+   opacity: 0;
+   transform: translateY(2rem);
+   animation: button 2s  forwards 19s ;
+}
+@keyframes button {
+   to{
+    opacity: 1;
+    transform: translateY(0);
+   }
+}
+.hire-me-button:hover{
+transform: scale(1.1);
+font-size: 2.3rem;
+cursor: pointer;
+}

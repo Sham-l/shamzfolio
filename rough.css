@@ -1,0 +1,87 @@
+.big{
+    font-weight: 900;
+    font-size: 4.5;
+    color: #F2DF3A;
+    filter: drop-shadow(2px 2px 4px #00000060);
+}
+.big:hover{
+    font-weight: 900;
+    font-size: 4.7rem;
+    color: #F2DF3A;
+    filter: drop-shadow(2px 2px 3px #00000060);
+    animation: shake 1.3s linear alternate;
+    display: inline-block;
+    cursor: grab;
+    
+}
+
+@keyframes shake {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }  
+}
+
+
+.plane{
+    height: 300px;
+    width:350px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    animation:plane 10s ;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+   transform-style: initial;
+}
+@keyframes plane {
+    0%{
+        right: 0;
+       
+       
+    }
+    50%{
+      
+        transform: rotate(-10deg);
+      
+        
+
+    }
+   
+    100%{
+        
+        left: 30%;
+       
+        transform: translateX(23rem) translateY(-40%);
+       
+    }
+    110%{
+        transform: scale(1.5);
+    }
+  
+}
+.animation{
+    width: 50%;
+    min-height: 500px;
+    background: url(my-portfolio-images/world-travel-map-pins-global-earth-maps-worldwide-business-communication-isolated-illustration_102902-994.jpg);
+    padding: 10px;
+    background-position: 0 0;
+    animation: anim 300s linear ;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+   
+}
+@keyframes anim{
+    0%{
+        background-position: 0 0;
+    }
+    1%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 1000% 0;
+    }
+}
